@@ -1,0 +1,79 @@
+# Variables
+.env*
+!.env.example
+.venv/
+
+# Objects
+*.o
+*.ko
+*.obj
+*.elf
+
+# Shared objects
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Libraries
+*.a
+*.lib
+*.l[ao]
+
+# Executables
+*.exe
+*.out
+*.test
+
+# Coverage
+*.cover*
+.coverage.*
+coverage.*
+profile.cov
+
+# Databases
+*.db
+*.sqlite*
+
+# Archives
+*.7z
+*.rar
+*.zip
+*.gz
+*.gzip
+*.bzip[2]
+*.xz
+*.tar.*
+
+# Logs
+*.log
+
+# Cruft
+.idea/
+.vscode/
+.DS_Store
+*.sw[op]
+*.swo
+TAGS
+tags
+*~
+
+# Zig
+zig-cache/
+zig-out/
+
+# Go
+go.work
+go.work.sum
+
+# Python
+__pycache__/
+*.py[co]
+*.pyd
+.pytest_cache/
+.ruff_cache/
+
+# Project specific
+/skel/bin/*
+/skel/usr/local/go
+/reason-roofs
