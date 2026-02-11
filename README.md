@@ -9,6 +9,9 @@
 
 ```
 
+A low-overhead, minimal and masterable system for programmers.  
+The core idea is for it to be masterable within human-time (estimated at about 14 years), excluding the kernel.
+
 # Toolset
 * OpenRC ([openrc](https://wiki.gentoo.org/wiki/OpenRC))
 * BusyBox ([busybox](https://www.busybox.net))
