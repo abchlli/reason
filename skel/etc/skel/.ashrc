@@ -1,0 +1,23 @@
+stty -ixon
+
+PS1='\[\033[31m\]\u\[\033[0m\]@\[\033[34m\]\h$(
+  if git rev-parse --git-dir > /dev/null 2>&1; then
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+    if [ -n "$branch" ]; then
+      echo " \[\033[32m\][$branch]"
+    else
+      commit=$(git rev-parse --short HEAD 2>/dev/null)
+      if [ -n "$commit" ]; then
+        echo " \[\033[32m\][detached:$commit]"
+      fi
+    fi
+  fi
+) \[\033[0m\]\w \$ '
+
+alias ls="ls -lh --group-directories-first --color=always" la="ls -A"
+alias free="free -h" df="df -h" du="du -h"
+alias sk="sk --margin 10% --color='bw'"
+alias l="ls" s="ls" sl="ls" lx="ls" cdd="cd" mdkir="mkdir" h="hx" x="hx" xh="hx"
+alias clip="/mnt/c/Windows/System32/clip.exe"
+
+[[ -z "$TMUX" ]] && [[ "$TERM" != "linux" ]] && exec tmux new -As $USER
