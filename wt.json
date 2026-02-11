@@ -1,0 +1,198 @@
+
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [],
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "firstWindowPreference": "defaultProfile",
+  "initialCols": 135,
+  "initialRows": 35,
+  "keybindings": [
+    {
+      "id": "Terminal.CopyToClipboard",
+      "keys": "enter"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+enter"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+shift+enter"
+    },
+    {
+      "id": null,
+      "keys": "ctrl+c"
+    },
+    {
+      "id": null,
+      "keys": "ctrl+shift+c"
+    },
+    {
+      "id": null,
+      "keys": "ctrl+v"
+    },
+    {
+      "id": null,
+      "keys": "ctrl+shift+v"
+    }    
+  ],
+  "language": "en-US",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "bellStyle": "none",
+      "colorScheme": "Him",
+      "cursorShape": "filledBox",
+      "font": {
+        "face": "JetBrains Mono NL",
+        "size": 12,
+        "weight": "bold"
+      }
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command Prompt"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#5555FF",
+      "brightBlack": "#555555",
+      "brightBlue": "#5555FF",
+      "brightCyan": "#55FFFF",
+      "brightGreen": "#4AD66D",
+      "brightPurple": "#FF55FF",
+      "brightRed": "#FF5555",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFF55",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#55FFFF",
+      "foreground": "#FFFFFF",
+      "green": "#4AD66D",
+      "name": "Him",
+      "purple": "#FF55FF",
+      "red": "#FF5555",
+      "selectionBackground": "#FFFFFF",
+      "white": "#BBBBBB",
+      "yellow": "#FFFF55"
+    },
+    {
+      "background": "#1E1E2E",
+      "black": "#45475A",
+      "blue": "#89B4FA",
+      "brightBlack": "#585B70",
+      "brightBlue": "#89B4FA",
+      "brightCyan": "#94E2D5",
+      "brightGreen": "#A6E3A1",
+      "brightPurple": "#F5C2E7",
+      "brightRed": "#F38BA8",
+      "brightWhite": "#A6ADC8",
+      "brightYellow": "#F9E2AF",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#94E2D5",
+      "foreground": "#CDD6F4",
+      "green": "#A6E3A1",
+      "name": "Catppuccin",
+      "purple": "#F5C2E7",
+      "red": "#F38BA8",
+      "selectionBackground": "#585B70",
+      "white": "#BAC2DE",
+      "yellow": "#F9E2AF"
+    },
+    {
+      "background": "#1E1F29",
+      "black": "#000000",
+      "blue": "#BD93F9",
+      "brightBlack": "#555555",
+      "brightBlue": "#BD93F9",
+      "brightCyan": "#8BE9FD",
+      "brightGreen": "#50FA7B",
+      "brightPurple": "#FF79C6",
+      "brightRed": "#FF5555",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#F1FA8C",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#8BE9FD",
+      "foreground": "#F8F8F2",
+      "green": "#50FA7B",
+      "name": "Dracula",
+      "purple": "#FF79C6",
+      "red": "#FF5555",
+      "selectionBackground": "#44475A",
+      "white": "#BBBBBB",
+      "yellow": "#F1FA8C"
+    },
+    {
+      "background": "#1D2021",
+      "black": "#665C54",
+      "blue": "#7DAEA3",
+      "brightBlack": "#928374",
+      "brightBlue": "#7DAEA3",
+      "brightCyan": "#89B482",
+      "brightGreen": "#A9B665",
+      "brightPurple": "#D3869B",
+      "brightRed": "#EA6962",
+      "brightWhite": "#D4BE98",
+      "brightYellow": "#D8A657",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#89B482",
+      "foreground": "#D4BE98",
+      "green": "#A9B665",
+      "name": "Gruvbox",
+      "purple": "#D3869B",
+      "red": "#EA6962",
+      "selectionBackground": "#FFFFFF",
+      "white": "#D4BE98",
+      "yellow": "#D8A657"
+    },
+    {
+      "background": "#2E3440",
+      "black": "#3B4252",
+      "blue": "#81A1C1",
+      "brightBlack": "#4C566A",
+      "brightBlue": "#81A1C1",
+      "brightCyan": "#8FBCBB",
+      "brightGreen": "#A3BE8C",
+      "brightPurple": "#B48EAD",
+      "brightRed": "#BF616A",
+      "brightWhite": "#ECEFF4",
+      "brightYellow": "#EBCB8B",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#88C0D0",
+      "foreground": "#D8DEE9",
+      "green": "#A3BE8C",
+      "name": "Nord",
+      "purple": "#B48EAD",
+      "red": "#BF616A",
+      "selectionBackground": "#434C5E",
+      "white": "#E5E9F0",
+      "yellow": "#EBCB8B"
+    }
+  ],
+  "searchWebDefaultQueryUrl": "https://www.google.com/search?q=%s&udm=14",
+  "themes": []
+}
