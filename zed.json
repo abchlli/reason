@@ -1,0 +1,33 @@
+{
+  "file_scan_exclusions": ["**/.git", "**/.tmp.drive*"],
+  "title_bar": {
+    "show_user_picture": false,
+    "show_sign_in": false,
+  },
+  "disable_ai": true,
+  "project_panel": {
+    "default_width": 202,
+  },
+  "search": {
+    "regex": false,
+    "case_sensitive": true,
+  },
+  "rounded_selection": true,
+  "cursor_shape": "block",
+  "on_last_window_closed": "quit_app",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "helix_mode": true,
+  "buffer_font_weight": 600.0,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 13.0,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "ui_font_size": 15.0,
+  "theme": "GitHub Dark",
+}
