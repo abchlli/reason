@@ -17,7 +17,10 @@ PS1='\[\033[31m\]\u\[\033[0m\]@\[\033[34m\]\h$(
 alias ls="ls -lh --group-directories-first --color=always" la="ls -A"
 alias free="free -h" df="df -h" du="du -h"
 alias sk="sk --margin 10% --color='bw'"
+alias tree="trex"
+alias trex="trex -c -p -s"
 alias l="ls" s="ls" sl="ls" lx="ls" cdd="cd" mdkir="mkdir" h="hx" x="hx" xh="hx"
 alias clip="/mnt/c/Windows/System32/clip.exe"
+alias explorer="/mnt/c/Windows/explorer.exe"
 
 [[ -z "$TMUX" ]] && [[ "$TERM" != "linux" ]] && exec tmux new -As $USER

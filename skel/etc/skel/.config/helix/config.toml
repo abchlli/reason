@@ -1,3 +1,4 @@
+# Set soft-wrap and wrap-at-text-width to true when writing documentation.
 theme = "vscode"
 
 [editor]

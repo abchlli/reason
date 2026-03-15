@@ -1,13 +1,13 @@
 [[language]]
 name = "go"
-roots = ["go.mod", "go.work"]
+roots = ["go.mod"]
 language-servers = ["gopls"]
 auto-format = true
 formatter = { command = "goimports" }
 
 [[language]]
 name = "python"
-roots = ["ty.toml", "pyproject.toml", "setup.py", "requirements.txt"]
-language-servers = ["ty"]
+roots = ["pyproject.toml", "setup.py", "requirements.txt"]
+language-servers = ["pylsp"]
 auto-format = true
-formatter = { command = "ruff", args = ["format", "-" ] }
+formatter = { command = "ruff format" }
