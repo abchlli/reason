@@ -121,7 +121,7 @@ fn_declaration = "#DCDCAA"
 constant = "#4FC1FF"
 
 background = "#1e1e1e"
-text = "#d4d4d4"
+text = "#ffffff"
 cursor = "#a6a6a6"
 widget = "#252526"
 borders = "#323232"

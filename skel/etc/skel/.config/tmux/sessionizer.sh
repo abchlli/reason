@@ -2,7 +2,7 @@
 
 # Lookup
 HOME_DIR="${HOME:-}"
-DIRS="$HOME_DIR .config"
+DIRS="$HOME_DIR $HOME_DIR/code/* $HOME_DIR/.config"
 
 # This uses skim, but any other fuzzy finder will do
 if [ $# -eq 1 ]; then
@@ -23,12 +23,15 @@ fi
 
 # Extracting the basename to use it as the session name
 if [ "$selected" = $USER ]; then
-    name=$USER
+    raw_name=$USER
     path="$HOME_DIR"
 else
-    name=$(basename "$selected")
+    raw_name=$(basename "$selected")
     path="$HOME_DIR/$selected"
 fi
+
+# Converting dots to underscores
+name=$(echo "$raw_name" | tr '.' '_')
 
 # Does the selected session exist?
 if ! tmux has-session -t "=$name" 2>/dev/null; then
@@ -42,4 +45,3 @@ if [ -n "$TMUX" ]; then
 else
     tmux attach-session -t "=$name"
 fi
-
