@@ -1,4 +1,3 @@
-Media query the ASCII art
 ```
   ______  ______  ______  ______  ______  __   __
  /\  == \/\  ___\/\  __ \/\  ___\/\  __ \/\ "-.\ \
@@ -78,7 +77,7 @@ Any version after Windows 10 2004 (build 19041) will do.
 I highly recommend Windows 11 IoT LTSC and running [Win11Debloat](https://github.com/Raphire/Win11Debloat)
 post-installation.
 
-* On this version of Windows, the modern Windows Snipping Tool is missing, how do I install it?  
+* On this version of Windows, the modern Windows Snipping Tool is missing. How do I install it?  
 Install `winget` then `winget install 'Snipping Tool'`
 
 * What BusyBox applets are available in the build?
