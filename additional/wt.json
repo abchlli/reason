@@ -3,7 +3,7 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [],
   "copyFormatting": "none",
-  "copyOnSelect": false,
+  "copyOnSelect": true,
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "firstWindowPreference": "defaultProfile",
   "initialCols": 135,
@@ -16,10 +16,6 @@
     {
       "id": "Terminal.PasteFromClipboard",
       "keys": "ctrl+enter"
-    },
-    {
-      "id": "Terminal.PasteFromClipboard",
-      "keys": "ctrl+shift+enter"
     },
     {
       "id": null,

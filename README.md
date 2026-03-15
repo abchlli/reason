@@ -1,3 +1,4 @@
+Media query the ASCII art
 ```
   ______  ______  ______  ______  ______  __   __
  /\  == \/\  ___\/\  __ \/\  ___\/\  __ \/\ "-.\ \
@@ -51,9 +52,14 @@ adduser -h /home/albi -G wheel albi
 echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" > /etc/resolv.conf
 ```
 
-4. Done! 🎉
+4. Set the time correctly.
+```
+ln -s /usr/share/zoneinfo/Japan /etc/localtime
+```
+
+5. Done! 🎉
 ```powershell
-# You could set something like this as your Windows Terminal profile's command line
+# You could set something like this as your Windows Terminal profile's command line.
 wsl.exe --distribution Reason --user albi
 ```
 
@@ -62,6 +68,7 @@ Make sure you have everything required by [alpine-make-rootfs](https://github.co
 
 ```sh
 su
+git config --global --add safe.directory $PWD
 sh build.sh
 ```
 
@@ -83,7 +90,7 @@ Install `winget` then `winget install 'Snipping Tool'`
         mount, mountpoint, mv, nc, netstat, nohup, nologin, nproc, od, passwd, patch, pgrep, pidof, ping, ping6, pkill,
         pmap, printf, ps, pwd, readlink, realpath, reset, rev, rm, rmdir, route, sed, seq, sh, shuf, sleep, sort, split,
         ssl_client, stat, strings, stty, su, sulogin, sync, tac, tail, tar, tee, test, time, timeout, touch, tr, traceroute,
-        traceroute6, tree, true, tty, udhcpc, udhcpc6, umount, uname, uniq, unxz, unzip, uptime, users, uuidgen, watch, wc,
+        traceroute6, true, tty, udhcpc, udhcpc6, umount, uname, uniq, unxz, unzip, uptime, users, uuidgen, watch, wc,
         wget, which, whoami, whois, xargs, xz, xzcat, zcat
 ```
 
@@ -97,7 +104,7 @@ service containerd start
 service docker start
 ```
 
-* Can I have the `.gitconfig` you use?
+* Can I have the `.config/git/config` you use?
 ```ini
 [user]
   email = abchllbox@gmail.com
