@@ -4,10 +4,3 @@ roots = ["go.mod"]
 language-servers = ["gopls"]
 auto-format = true
 formatter = { command = "goimports" }
-
-[[language]]
-name = "python"
-roots = ["pyproject.toml", "setup.py", "requirements.txt"]
-language-servers = ["pylsp"]
-auto-format = true
-formatter = { command = "ruff format" }
