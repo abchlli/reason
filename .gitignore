@@ -58,10 +58,6 @@ TAGS
 tags
 *~
 
-# Zig
-zig-cache/
-zig-out/
-
 # Go
 go.work
 go.work.sum
@@ -73,7 +69,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Project specific
-/skel/bin/*
-/skel/usr/local/go
+# Specific
+/root/usr/local/go
+/root/usr/local/bin/*
 /reason-roofs
