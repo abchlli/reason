@@ -14,10 +14,10 @@ The core idea is for it to be masterable within human-time (estimated at about 1
 
 # Toolset
 * Musl ([documentation](https://musl.libc.org/about.html), [source](https://git.musl-libc.org/cgit/musl))
-* BusyBox ([documentation](https://busybox.net/), [source](https://git.busybox.net/busybox)), [manual](https://manned.org/man/busybox))
+* BusyBox ([documentation](https://busybox.net/), [source](https://git.busybox.net/busybox), [manual](https://manned.org/man/busybox))
 * OpenRC ([documentation](https://wiki.alpinelinux.org/wiki/OpenRC), [source](https://github.com/OpenRC/openrc))
 * OpenSSL ([source](https://github.com/openssl/openssl), [manual](https://manned.org/man/openssl))
-* OpenSSH ([[documentation](https://www.openssh.org), [manual](https://manned.org/man/ssh), [source](https://github.com/openssh/openssh-portable))
+* OpenSSH ([documentation](https://www.openssh.org), [manual](https://manned.org/man/ssh), [source](https://github.com/openssh/openssh-portable))
 * OpenDoas ([source](https://github.com/Duncaen/OpenDoas), [manual](https://manned.org/man/doas))
 * File ([source](https://astron.com/pub/file), [manual](https://manned.org/man/file))
 * Xxd ([source](https://github.com/vim/vim/tree/master/src/xxd), [manual](https://manned.org/man/xxd))
