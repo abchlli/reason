@@ -7,7 +7,7 @@ dir="$1"
 trap cleanup INT TERM
 
 # Initial draw
-tree -d 3 -c -p | grep -v '.*\.bck'
+trex -d 3 -c -p | grep -v '.*\.bck'
 
 # Looping forever
 while true; do
@@ -16,6 +16,6 @@ while true; do
     # Cleararing the screen
     clear
     # Redrawing
-    tree -d 3 -c -p | grep -v '.*\.bck'
+    trex -d 3 -c -p | grep -v '.*\.bck'
 done
 
