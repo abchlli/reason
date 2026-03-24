@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Dependencies
+apk add make gcc linux-headers go
+
 # Submodules
 until git submodule update --init --recursive; do sleep 10; done
 
@@ -59,8 +62,12 @@ ty
 sqlite
 "
 
+# Rootfs
 ./alpine-make-rootfs \
     --repositories-file ./repositories \
     --packages "$toolset" \
     --fs-skel-dir ./root \
     --script-chroot reason-rootfs.tar.gz ./chroot.sh
+
+# Cleanup
+apk add make gcc linux-headers go

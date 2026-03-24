@@ -68,7 +68,7 @@ wsl.exe --distribution Reason --user albi
 ```
 
 # Build
-Make sure you have everything required by [alpine-make-rootfs](https://github.com/alpinelinux/alpine-make-rootfs) to run plus `go` in $PATH.
+Make sure you have everything required by [alpine-make-rootfs](https://github.com/alpinelinux/alpine-make-rootfs).
 ```sh
 su
 git config --global --add safe.directory $(pwd)
@@ -131,5 +131,4 @@ Host github.com
     IdentityFile ~/.ssh/auth
 ```
 
-The system uses readline and helix bindings everywhere.  
-Enjoy!
+The system uses readline and helix bindings everywhere, enjoy!
