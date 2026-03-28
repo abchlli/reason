@@ -1,8 +1,8 @@
 theme = "vscode"
 
 [editor]
-mouse = false
 true-color = true
+mouse = false
 
 [editor.auto-pairs]
 '(' = ')'

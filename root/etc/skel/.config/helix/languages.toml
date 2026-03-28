@@ -1,6 +1,6 @@
 [[language]]
 name = "go"
-roots = ["go.mod"]
+roots = ["go.mod", "go.work"]
 language-servers = ["gopls"]
 auto-format = true
 formatter = { command = "goimports" }

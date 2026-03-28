@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Dependencies
-apk add make gcc linux-headers go
+apk add curl make gawk gcc linux-headers go
 
 # Submodules
 until git submodule update --init --recursive; do sleep 10; done
@@ -34,7 +34,6 @@ doas
 doas-sudo-shim
 file
 xxd
-curl
 jq
 git
 jujutsu
@@ -70,4 +69,4 @@ sqlite
     --script-chroot reason-rootfs.tar.gz ./chroot.sh
 
 # Cleanup
-apk add make gcc linux-headers go
+apk del curl make gawk gcc linux-headers go

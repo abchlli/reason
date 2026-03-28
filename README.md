@@ -21,7 +21,6 @@ The core idea is for it to be masterable within human-time (estimated at about 1
 * OpenDoas ([source](https://github.com/Duncaen/OpenDoas), [manual](https://manned.org/man/doas))
 * File ([source](https://astron.com/pub/file), [manual](https://manned.org/man/file))
 * Xxd ([source](https://github.com/vim/vim/tree/master/src/xxd), [manual](https://manned.org/man/xxd))
-* Curl ([documentation](https://curl.se/docs/tutorial.html), [source](https://github.com/curl/curl), [manual](https://manned.org/man/curl))
 * Jq ([documentation](https://jqlang.org), [source](https://github.com/jqlang/jq), [manual](https://manned.org/man/jq))
 * Git ([documentation](https://git-scm.com/book/en/v2), [source](https://github.com/git/git), [manual](https://manned.org/man/git))
 * Jujutsu ([documentation](https://www.jj-vcs.dev/latest), [source](https://github.com/jj-vcs/jj), [manual](https://manned.org/man/jj))
@@ -131,4 +130,21 @@ Host github.com
     IdentityFile ~/.ssh/auth
 ```
 
-The system uses readline and helix bindings everywhere, enjoy!
+* Why is there no curl?
+Curl supports a lot more then just HTTP(1/2/3) and it feels redundant.  
+I find myself using the graphical [HTTPie](https://httpie.io) client most of the time anyway.  
+For the one time you need to copy paste a curl command or (need to test something locally), there's a fun alias that uses BusyBox's wget.
+```sh
+alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
+curl ifconfig.me
+```
+```sh
+python -m http.server
+curl localhost:8000
+```
+
+* OpenSSL's codebase is huge, unreadable and bad.
+Agreed, there are some forks of it (LibreSSL, WolfSSl and BearSSL are some good ones), but it's non-trivial to switch.
+
+The system uses readline and helix bindings everywhere.
+Check out my highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!
