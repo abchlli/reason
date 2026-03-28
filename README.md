@@ -133,12 +133,9 @@ Host github.com
 * Why is there no curl?  
 Curl supports a lot more then just HTTP(1/2/3) and it feels redundant.  
 I find myself using the graphical [HTTPie](https://httpie.io) client most of the time anyway.  
-For that one time you want to copy-paste a command you can use this included BusyBox alias.
+For that one time you want to copy-paste a command you can use this BusyBox alias (which is included).
 ```sh
 alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
-curl ifconfig.me
-python -m http.server &
-curl localhost:8000
 ```
 
 * OpenSSL's codebase is huge, unreadable and bad.  
