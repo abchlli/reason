@@ -130,21 +130,16 @@ Host github.com
     IdentityFile ~/.ssh/auth
 ```
 
-* Why is there no curl?
+* Why is there no curl?  
 Curl supports a lot more then just HTTP(1/2/3) and it feels redundant.  
 I find myself using the graphical [HTTPie](https://httpie.io) client most of the time anyway.  
-For the one time you need to copy paste a curl command or (need to test something locally), there's a fun alias that uses BusyBox's wget.
+For that one time you want to copy-paste a command you can use this BusyBox alias (which is included).
 ```sh
 alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
-curl ifconfig.me
-```
-```sh
-python -m http.server
-curl localhost:8000
 ```
 
-* OpenSSL's codebase is huge, unreadable and bad.
-Agreed, there are some forks of it (LibreSSL, WolfSSl and BearSSL are some good ones), but it's non-trivial to switch.
+* OpenSSL's codebase is huge, unreadable and bad.  
+Agreed, there are some forks of it (namely LibreSSL, WolfSSl and BearSSL), but it's non-trivial to switch.
 
-The system uses readline and helix bindings everywhere.
-Check out my highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!
+The system uses readline and helix bindings everywhere.  
+You might wanna check out my highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!
