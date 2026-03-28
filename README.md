@@ -130,17 +130,14 @@ Host github.com
     IdentityFile ~/.ssh/auth
 ```
 
-* Why is there no curl?
-Curl supports a lot more then just HTTP(1/2/3) and it feels redundant and I find myself using the graphical [HTTPie](https://httpie.io) client most of the time anyway.
-For that one time you need to copy paste a curl command you can use this alias to BusyBox's wget which is included.
+* Why is there no curl?  
+Curl supports a lot more then just HTTP(1/2/3) and it feels redundant.  
+I find myself using the graphical [HTTPie](https://httpie.io) client most of the time anyway.  
+For that one time you want to copy-paste a command you can use this included BusyBox alias.
 ```sh
 alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
-```
-```sh
 curl ifconfig.me
-```
-```sh
-python -m http.server
+python -m http.server &
 curl localhost:8000
 ```
 
