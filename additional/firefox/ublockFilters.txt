@@ -1,4 +1,4 @@
-! Hide YouTube Lives and Streamed videos
+! Hide YouTube lives and streamed videos.
 www.youtube.com##ytd-search ytd-video-renderer:has([aria-label*="Streamed"], [aria-label*="Live"])
 www.youtube.com##ytd-search ytd-video-renderer:has(span:has-text(/^Streamed|^Live/))
 www.youtube.com##ytd-search ytd-video-renderer:has(.badge[aria-label="LIVE"])
@@ -6,12 +6,12 @@ www.youtube.com##ytd-search ytd-video-renderer:has(.badge-shape-wiz--thumbnail-l
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([aria-label*="Streamed"], [aria-label*="Live"])
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has(span:has-text(/^Streamed|^Live/))
 
-! Hide YouTube Upcoming stuff
+! Hide YouTube upcoming lives and videos.
 youtube.com##ytd-rich-item-renderer:has(button):has-text(/Notify me/)
 youtube.com##ytd-rich-item-renderer:has(yt-thumbnail-view-model):has-text(/LIVE/)
 youtube.com##ytd-rich-item-renderer:has(div.yt-content-metadata-view-model__metadata-row):has-text(/Streamed/)
 
-! Hide YouTube Shorts
+! Hide YouTube shorts
 www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
 www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
 www.youtube.com##ytd-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
@@ -30,19 +30,19 @@ www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^
 www.youtube.com##.shelf-header-layout-wiz__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
 www.youtube.com##.yt-shelf-header-layout__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
 
-! Hide YouTube Subscription Most Relevant section
+! Hide YouTube subscription's most relevant section.
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-section-renderer
 
-! Hide YouTube Searchbar
+! Hide YouTube searchbar.
 www.youtube.com##.ytSearchboxComponentInputBoxDark.ytSearchboxComponentInputBox
 www.youtube.com##.ytSearchboxComponentSearchButtonDark.ytSearchboxComponentSearchButton
 
-! Hide YouTube Header components
+! Hide YouTube header components.
 www.youtube.com###filter-menu
 www.youtube.com###guide-button
 www.youtube.com###masthead #center #voice-search-button
 www.youtube.com###chips
 www.youtube.com##ytd-feed-filter-chip-bar-renderer
 
-! Hide YouTube End Video Cards
+! Hide YouTube end video cards.
 www.youtube.com##.ytp-fullscreen-grid-stills-container
