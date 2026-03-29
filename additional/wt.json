@@ -57,7 +57,7 @@
          "experimental.retroTerminalEffect":false,
          "font":{
             "builtinGlyphs":false,
-            "face":"JetBrains Mono",
+            "face":"JetBrains Mono NL",
             "size":12,
             "weight":"bold"
          },
