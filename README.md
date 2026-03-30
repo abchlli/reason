@@ -10,7 +10,7 @@
 ```
 
 A low-overhead, minimal and masterable system for programmers.  
-The core idea is for complete understanding to be achivable in human-time.
+The core idea is for complete understanding of it to be achivable in human-time.  
 This includes the languages specifications and all the source code (estimated at ~14 years).
 
 # Toolset
