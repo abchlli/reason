@@ -10,7 +10,8 @@
 ```
 
 A low-overhead, minimal and masterable system for programmers.  
-The core idea is for it to be masterable within human-time (estimated at ~14 years).
+The core idea is for complete understanding to be achivable in human-time.
+This includes the languages specifications and all the source code (estimated at ~14 years).
 
 # Toolset
 * Musl ([website](https://musl.libc.org/about.html), [source](https://git.musl-libc.org/cgit/musl))
@@ -139,7 +140,6 @@ alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
 ```
 
 * OpenSSL's codebase is huge, unreadable and bad.  
-Agreed.  
 There are some alternative to it (namely LibreSSL and BearSSL), but it's non-trivial to switch.
 
 The system uses readline and helix bindings everywhere.  
