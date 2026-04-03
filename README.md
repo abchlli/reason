@@ -104,7 +104,7 @@ rc-service containerd start
 rc-service docker start
 ```
 
-* Can I have a the `.config/git/config` you use?
+* Can I have the `~/.config/git/config` you use?
 ```ini
 [core]
 	pager = cat
@@ -118,12 +118,29 @@ rc-service docker start
 	gpgsign = true
 	verbose = true
 [user]
+	signingkey = ~/.ssh/sign.pub
 	email = abchllbox@gmail.com
 	name = Alberto Chiaravalli
-	signingkey = ~/.ssh/sign.pub
 ```
 
-* Can I have a sample `.ssh/config` as well?
+* Can I have the `~/.config/jj/config.toml` you use?
+```toml
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[ui]
+pager = "cat"
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "~/.ssh/sign.pub"
+
+[user]
+email = "abchllbox@gmail.com"
+name = "Alberto Chiaravalli"
+```
+
+* Can I have a sample `~/.ssh/config` as well?
 ```
 Host github.com
     User git
