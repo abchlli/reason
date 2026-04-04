@@ -159,5 +159,11 @@ alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
 * OpenSSL's codebase is huge, unreadable and bad.  
 There are some alternative to it (namely LibreSSL and BearSSL), but it's non-trivial to switch.
 
+You might wanna set this to disable [wslg](https://github.com/microsoft/wslg) in `"$env:USERPROFILE\.wslconfig"`.
+```ini
+[wsl2]
+guiApplications=false
+```
+
 The system uses readline and helix bindings everywhere.  
 You might wanna check out my highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!

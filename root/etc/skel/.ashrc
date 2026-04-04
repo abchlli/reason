@@ -2,7 +2,11 @@
 stty -ixon
 
 PS1='\[\033[31m\]\u\[\033[0m\]@\[\033[34m\]\h$(
-  if git rev-parse --git-dir > /dev/null 2>&1; then
+  # is this a jj repo?
+  if jj root > /dev/null 2>&1; then
+    :
+  # is this a git repo?
+  elif git rev-parse --git-dir > /dev/null 2>&1; then
     branch=$(git symbolic-ref --short HEAD 2>/dev/null)
     if [ -n "$branch" ]; then
       echo " \[\033[32m\][$branch]"
@@ -20,7 +24,9 @@ alias df="df -h" du="du -h"
 alias sk="sk --margin 10% --color='bw'"
 alias cc="tcc" grep="grep -E" sed="sed -E"
 alias curl="wget -q -U 'User-Agent: curl/8.17/0' -O -"
-alias freebox='busybox ls -1 ${PATH//:/ } 2>/dev/null | grep -v "^/" | tr -d " " | sort | uniq | sed 1d'
 alias l="ls" s="ls" sl="ls" lx="ls" cdd="cd" mdkir="mkdir" h="hx" x="hx" xh="hx"
+
+alias clip="/mnt/c/Windows/System32/clip.exe"
+alias explorer="/mnt/c/Windows/explorer.exe"
 
 [[ -z "$TMUX" ]] && [[ "$TERM" != "linux" ]] && exec tmux new -As $USER
