@@ -3,61 +3,42 @@
 # Dependencies
 apk add curl make gawk gcc linux-headers go
 
-# Submodules
-until git submodule update --init --recursive; do sleep 10; done
-
 # Busybox
+until git submodule update --init --recursive; do sleep 10; done
 cp busybox.config busybox/.config ; cd busybox/ ; make
 cp ./busybox ../root/usr/local/bin/box; cd ..
 
-# Trex
-cd trex; CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags='-s -w -extldflags="-static"' -o build/trex_linux_amd64 trex.go
-cp ./build/trex_linux_amd64 ../root/usr/local/bin/trex; cd ..
-
-# Go
-wget "https://dl.google.com/go/$(curl https://go.dev/VERSION?m=text | head -n1).linux-amd64.tar.gz" \
-&& tar -C root/usr/local -xzf go*.linux-amd64.tar.gz
-rm go*.linux-amd64.tar.gz
-
 # Toolset
 toolset="
-apk-tools
-busybox
-busybox-openrc
+musl-dev
+apk-tools 
 openrc
+busybox 
+busybox-openrc
 tzdata
-openssl
+openssl 
 ca-certificates
-openssh-client
+openssh-client 
 openssh-keygen
-doas
+doas 
 doas-sudo-shim
-file
+file 
 xxd
 jq
-git
+git 
 jujutsu
 tmux
 skim
-inotify-tools
-helix
+helix 
 helix-tree-sitter-vendor
 markdown-oxide
-typst
-tinymist
 tcc
 tcc-libs-static
-musl-dev
 strace
 ltrace
 rizin
-go-tools
-gopls
-delve
-python3
-uv
-ruff
-ty
+typst
+tinymist
 sqlite
 "
 

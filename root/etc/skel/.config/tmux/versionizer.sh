@@ -31,10 +31,9 @@ host=${host%%/*}
 # Opening the remote in Windows's default browser
 case "$host" in
     github.com|gitlab.com|codeberg.org|git.sr.ht)
-        cmd.exe /c start "" "$url"
+        '/mnt/c/Windows/System32/cmd.exe' /c start "" "$url"
         ;;
     *)
         echo "Unsupported git host: $host"
         ;;
 esac
-

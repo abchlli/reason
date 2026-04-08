@@ -11,7 +11,7 @@
 
 A low-overhead, minimal and masterable system for programmers.  
 The core idea is for complete understanding of it to be achivable in human-time.  
-This includes the languages specifications and all the source code (estimated at ~14 years).
+This includes the languages specifications and all the source code (estimated at ~8 years).
 
 # Toolset
 * Musl ([website](https://musl.libc.org/about.html), [source](https://git.musl-libc.org/cgit/musl))
@@ -29,17 +29,14 @@ This includes the languages specifications and all the source code (estimated at
 * Skim ([source](https://github.com/skim-rs/skim), [manual](https://manned.org/man/skim))
 * Helix ([website](https://helix-editor.com), [source](https://github.com/helix-editor/helix), [manual](https://manned.org/man/helix))
 * Oxide ([website](https://oxide.md/index), [source](https://github.com/Feel-ix-343/markdown-oxide))
-* Typst ([ducumentation](https://typst.app/docs), [source](https://github.com/typst/typst), [manual](https://manned.org/man/typst))
 * TinyCC ([website](https://bellard.org/tcc/tcc-doc.html), [source](https://repo.or.cz/w/tinycc.git), [manual](https://manned.org/man/tcc))
 * Strace ([source](https://github.com/strace/strace), [manual](https://manned.org/man/strace))
 * Ltrace ([source](https://gitlab.com/cespedes/ltrace), [manual](https://manned.org/man/ltrace))
 * Rizin ([website](https://rizin.re), [source](https://github.com/rizinorg/rizin), [manual](https://manned.org/man/rizin))
-* Go ([website](https://go.dev/doc), [source](https://github.com/golang/go))
-* Delve ([source](https://github.com/go-delve/delve), [manual](https://manned.org/man/dlv))
-* CPython ([website](https://docs.python.org/3), [source](https://github.com/python/cpython), [manual](https://manned.org/man/python))
+* Typst ([ducumentation](https://typst.app/docs), [source](https://github.com/typst/typst), [manual](https://manned.org/man/typst))
 * SQLite ([website](https://sqlite.org), [source](https://github.com/sqlite/sqlite), [manual](https://manned.org/man/sqlite))
 
-Here are the [C99](https://www.open-std.org/JTC1/SC22/WG14/www/projects.html) (N1256), [Go](https://go.dev/ref/spec) and [CPython](https://docs.python.org/3/reference/index.html) specifications.  
+Here's the [C99](https://www.open-std.org/JTC1/SC22/WG14/www/projects.html) (N1256) specification and the [Rust](https://doc.rust-lang.org/stable/book/index.html) book.
 Refer to the [Alpine](https://www.alpinelinux.org) and [Linux](https://kernel.org) websites for more.
 
 > [!NOTE]
@@ -64,8 +61,10 @@ echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" > /etc/resolv.conf
 
 You could set something like this as your Windows Terminal profile's command line.
 ```powershell
-wsl.exe --distribution Reason --user albi
+wsl.exe --distribution Reason --user albi --cd ~/
 ```
+
+This is a good time to install the programming language (s) and whatnot.  
 
 # Build
 Make sure you have everything required by [alpine-make-rootfs](https://github.com/alpinelinux/alpine-make-rootfs).
@@ -88,9 +87,9 @@ Install `winget` then run `winget install 'Snipping Tool'`.
 Currently defined functions:
         [, [[, addgroup, adduser, ash, base64, basename, bunzip2, bzcat, bzip2, cat, chattr, chgrp, chmod, chown, chpasswd, chroot, clear, cmp, cp, cpio, cut, date, dd, delgroup, deluser,
         df, diff, dirname, du, echo, env, expr, fallocate, false, find, free, getopt, grep, groups, gunzip, gzip, head, hostname, id, init, install, ip, ipaddr, ipcalc, iplink, iproute,
-        kill, last, less, ln, ls, lsattr, lsof, mkdir, mkfifo, mknod, mktemp, mount, mountpoint, mv, nc, netstat, nohup, nproc, od, passwd, patch, pgrep, pidof, ping, ping6, pkill, pmap,
+        kill, last, less, ln, ls, lsattr, lsof, mkdir, mkfifo, mknod, mktemp, mount, mountpoint, mv, nc, netstat, nohup, nproc, od, passwd, patch, pgrep, pstree, pidof, ping, ping6, pkill, pmap,
         printf, ps, pwd, readlink, realpath, reset, rev, rm, rmdir, route, sed, seq, sh, shuf, sleep, sort, split, stat, strings, stty, su, sync, tac, tail, tar, tee, test, time, timeout,
-        touch, tr, traceroute, traceroute6, true, tty, umount, uname, uniq, unxz, unzip, uptime, users, uuidgen, watch, wc, wget, which, whoami, whois, xargs, xz, xzcat, zcat
+        touch, tr, traceroute, traceroute6, tree, true, tty, umount, uname, uniq, unxz, unzip, uptime, users, uuidgen, watch, wc, wget, which, whoami, whois, xargs, xz, xzcat, zcat
 ```
 The build is made for WSL allowing for a smaller selection of applets (performance over binary size).
 
@@ -104,7 +103,7 @@ rc-service containerd start
 rc-service docker start
 ```
 
-* Can I have the `~/.config/git/config` you use?
+* Can I a sample `~/.config/git/config`?
 ```ini
 [core]
 	pager = cat
@@ -123,7 +122,7 @@ rc-service docker start
 	name = Alberto Chiaravalli
 ```
 
-* Can I have the `~/.config/jj/config.toml` you use?
+* Can I have a sample `~/.config/jj/config.toml` too?
 ```toml
 #:schema https://jj-vcs.github.io/jj/latest/config-schema.json
 
@@ -140,7 +139,7 @@ email = "abchllbox@gmail.com"
 name = "Alberto Chiaravalli"
 ```
 
-* Can I have a sample `~/.ssh/config` as well?
+* Can I have a sample `~/.ssh/config` pleaaaase?
 ```
 Host github.com
     User git

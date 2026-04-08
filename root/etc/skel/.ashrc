@@ -2,10 +2,8 @@
 stty -ixon
 
 PS1='\[\033[31m\]\u\[\033[0m\]@\[\033[34m\]\h$(
-  # is this a jj repo?
   if jj root > /dev/null 2>&1; then
     :
-  # is this a git repo?
   elif git rev-parse --git-dir > /dev/null 2>&1; then
     branch=$(git symbolic-ref --short HEAD 2>/dev/null)
     if [ -n "$branch" ]; then
