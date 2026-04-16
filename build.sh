@@ -37,8 +37,6 @@ tcc-libs-static
 strace
 ltrace
 rizin
-typst
-tinymist
 sqlite
 "
 

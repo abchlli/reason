@@ -1,5 +1,7 @@
 // I choose what I want to open from my bookmarks.
 user_pref("browser.urlbar.autoFill", false);
+user_pref("browser.urlbar.suggest.bookmark", true);
+user_pref("browser.urlbar.suggest.quickactions", true);
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
@@ -46,7 +48,7 @@ user_pref("browser.tabs.warnOnOpen", true);
 // No container tabs.
 user_pref("privacy.userContext.ui.enabled", true);
 
-// Annoyances
+// Annoyances.
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
@@ -61,7 +63,7 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 // No tab previews.
 user_pref("browser.tabs.hoverPreview.showThumbnails", false);
 
-// Security
+// Security.
 user_pref("browser.formfill.enable", false);
 user_pref("privacy.clearOnShutdown_v2.formdata", true)
 user_pref("signon.rememberSignons", false);
@@ -71,10 +73,10 @@ user_pref("privacy.globalprivacycontrol.enabled", true);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 
-// Telemetry
+// Telemetry.
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.usage.uploadEnabled", false);
 
-// Enable styling through userChrome.css
+// Enable styling through userChrome.css.
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);

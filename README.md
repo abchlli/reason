@@ -14,29 +14,27 @@ The core idea is for complete understanding of it to be achivable in human-time.
 This includes the languages specifications and all the source code (estimated at ~8 years).
 
 # Toolset
-* Musl ([website](https://musl.libc.org/about.html), [source](https://git.musl-libc.org/cgit/musl))
-* BusyBox ([website](https://busybox.net/), [source](https://git.busybox.net/busybox), [manual](https://manned.org/man/busybox))
-* OpenRC ([website](https://wiki.alpinelinux.org/wiki/OpenRC), [source](https://github.com/OpenRC/openrc), [manual](https://manned.org/man/openssl))
-* OpenSSL ([source](https://github.com/openssl/openssl), [manual](https://manned.org/man/openssl))
-* OpenSSH ([website](https://www.openssh.org), [manual](https://manned.org/man/ssh), [source](https://github.com/openssh/openssh-portable))
-* OpenDoas ([source](https://github.com/Duncaen/OpenDoas), [manual](https://manned.org/man/doas))
-* File ([source](https://astron.com/pub/file), [manual](https://manned.org/man/file))
-* Xxd ([source](https://github.com/vim/vim/tree/master/src/xxd), [manual](https://manned.org/man/xxd))
-* Jq ([website](https://jqlang.org), [source](https://github.com/jqlang/jq), [manual](https://manned.org/man/jq))
-* Git ([website](https://git-scm.com/book/en/v2), [source](https://github.com/git/git), [manual](https://manned.org/man/git))
-* Jujutsu ([website](https://www.jj-vcs.dev/latest), [source](https://github.com/jj-vcs/jj), [manual](https://manned.org/man/jj))
-* Tmux ([source](https://github.com/tmux/tmux), [manual](https://manned.org/man/tmux))
-* Skim ([source](https://github.com/skim-rs/skim), [manual](https://manned.org/man/skim))
-* Helix ([website](https://helix-editor.com), [source](https://github.com/helix-editor/helix), [manual](https://manned.org/man/helix))
-* Oxide ([website](https://oxide.md/index), [source](https://github.com/Feel-ix-343/markdown-oxide))
-* TinyCC ([website](https://bellard.org/tcc/tcc-doc.html), [source](https://repo.or.cz/w/tinycc.git), [manual](https://manned.org/man/tcc))
-* Strace ([source](https://github.com/strace/strace), [manual](https://manned.org/man/strace))
-* Ltrace ([source](https://gitlab.com/cespedes/ltrace), [manual](https://manned.org/man/ltrace))
-* Rizin ([website](https://rizin.re), [source](https://github.com/rizinorg/rizin), [manual](https://manned.org/man/rizin))
-* Typst ([ducumentation](https://typst.app/docs), [source](https://github.com/typst/typst), [manual](https://manned.org/man/typst))
-* SQLite ([website](https://sqlite.org), [source](https://github.com/sqlite/sqlite), [manual](https://manned.org/man/sqlite))
+What is pre-installed?
+* Musl ([learn](https://musl.libc.org/about.html), [manual](https://manned.org/man/libc), [source](https://git.musl-libc.org/cgit/musl))
+* BusyBox ([learn](https://busybox.net/FAQ.html), [manual](https://manned.org/man/busybox), [source](https://git.busybox.net/busybox))
+* OpenSSH ([learn](https://www.openssh.org), [manual](https://manned.org/man/ssh), [source](https://github.com/openssh/openssh-portable))
+* Doas ([manual](https://manned.org/man/doas), [source](https://github.com/Duncaen/OpenDoas))
+* File ([manual](https://manned.org/man/file), [source](https://astron.com/pub/file))
+* Xxd ([manual](https://manned.org/man/xxd), [source](https://github.com/vim/vim/tree/master/src/xxd))
+* Jq ([learn](https://jqlang.org/tutorial), [manual](https://manned.org/man/jq), [source](https://github.com/jqlang/jq))
+* Git ([learn](https://git-scm.com/book/en/v2), [manual](https://manned.org/man/git), [source](https://github.com/git/git))
+* Jujutsu ([learn](https://www.jj-vcs.dev/latest), [manual](https://manned.org/man/jj), [source](https://github.com/jj-vcs/jj))
+* Tmux ([manual](https://manned.org/man/tmux), [source](https://github.com/tmux/tmux))
+* Skim ([manual](https://manned.org/man/skim), [source](https://github.com/skim-rs/skim))
+* Helix ([learn](https://helix-editor.com), [manual](https://manned.org/man/helix), [source](https://github.com/helix-editor/helix))
+* Oxide ([learn](https://oxide.md/index), [source](https://github.com/Feel-ix-343/markdown-oxide)
+* TinyCC ([learn](https://bellard.org/tcc/tcc-doc.html), [manual](https://manned.org/man/tcc), [source](https://repo.or.cz/w/tinycc.git))
+* Strace ([manual](https://manned.org/man/strace), [source](https://github.com/strace/strace))
+* Ltrace ([manual](https://manned.org/man/ltrace), [source](https://gitlab.com/cespedes/ltrace))
+* Rizin ([learn](https://rizin.re), [manual](https://manned.org/man/rizin), [source](https://github.com/rizinorg/rizin))
+* SQLite ([learn](https://sqlite.org), [manual](https://manned.org/man/sqlite), [source](https://github.com/sqlite/sqlite))
 
-Here's the [C99](https://www.open-std.org/JTC1/SC22/WG14/www/projects.html) (N1256) specification and the [Rust](https://doc.rust-lang.org/stable/book/index.html) book.
+Addtionally, here's the [C99](https://www.open-std.org/JTC1/SC22/WG14/www/projects.html) (N1256) specification.  
 Refer to the [Alpine](https://www.alpinelinux.org) and [Linux](https://kernel.org) websites for more.
 
 > [!NOTE]
@@ -85,11 +83,13 @@ Install `winget` then run `winget install 'Snipping Tool'`.
 * What BusyBox applets are available in the build?
 ```
 Currently defined functions:
-        [, [[, addgroup, adduser, ash, base64, basename, bunzip2, bzcat, bzip2, cat, chattr, chgrp, chmod, chown, chpasswd, chroot, clear, cmp, cp, cpio, cut, date, dd, delgroup, deluser,
-        df, diff, dirname, du, echo, env, expr, fallocate, false, find, free, getopt, grep, groups, gunzip, gzip, head, hostname, id, init, install, ip, ipaddr, ipcalc, iplink, iproute,
-        kill, last, less, ln, ls, lsattr, lsof, mkdir, mkfifo, mknod, mktemp, mount, mountpoint, mv, nc, netstat, nohup, nproc, od, passwd, patch, pgrep, pstree, pidof, ping, ping6, pkill, pmap,
-        printf, ps, pwd, readlink, realpath, reset, rev, rm, rmdir, route, sed, seq, sh, shuf, sleep, sort, split, stat, strings, stty, su, sync, tac, tail, tar, tee, test, time, timeout,
-        touch, tr, traceroute, traceroute6, tree, true, tty, umount, uname, uniq, unxz, unzip, uptime, users, uuidgen, watch, wc, wget, which, whoami, whois, xargs, xz, xzcat, zcat
+        [, [[, addgroup, adduser, ash, base64, basename, bunzip2, bzcat, bzip2, cat, chattr, chgrp, chmod, chown, chpasswd, chroot, clear,
+        cmp, cp, cpio, cut, date, dd, delgroup, deluser, df, diff, dirname, du, echo, env, expr, fallocate, false, find, free, getopt, grep,
+        groups, gunzip, gzip, head, hostname, id, init, install, ip, ipaddr, ipcalc, iplink, iproute, kill, last, less, ln, ls, lsattr,
+        lsof, mkdir, mkfifo, mknod, mktemp, mount, mountpoint, mv, nc, netstat, nohup, nproc, od, passwd, patch, pgrep, pidof, ping, ping6,
+        pkill, pmap, printf, ps, pwd, readlink, realpath, reset, rev, rm, rmdir, route, sed, seq, sh, shuf, sleep, sort, split, stat,
+        strings, stty, su, sync, tac, tail, tar, tee, test, time, timeout, touch, tr, traceroute, traceroute6, true, tty, umount, uname,
+        uniq, unxz, unzip, uptime, users, uuidgen, watch, wc, wget, which, whoami, whois, xargs, xz, xzcat, zcat
 ```
 The build is made for WSL allowing for a smaller selection of applets (performance over binary size).
 
@@ -164,5 +164,5 @@ You might wanna set this to disable [wslg](https://github.com/microsoft/wslg) in
 guiApplications=false
 ```
 
-The system uses readline and helix bindings everywhere.  
-You might wanna check out my highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!
+The system uses readline and helix style keybinds everywhere.  
+You might wanna import the highly curated [bookmarks](./additional/firefox/bookmarks.html), enjoy!
